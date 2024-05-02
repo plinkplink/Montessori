@@ -125,3 +125,24 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
   top: 822px;
 }
+
+/* Styling for the "Start" button */
+#start {
+  position: absolute;
+  left: 75%;
+  transform: translateX(-50%);
+  top: 40%;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #346AC0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+#start:hover {
+  background-color: #2a579a;
+}

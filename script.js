@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
   initializeGrid();
+  // Removed automatic number loading to comply with the new start button functionality
+});
+
+// Added event listener for the Start button to load numbers and hide the button when clicked
+document.getElementById('start').addEventListener('click', async function() {
+  await initializeDragDrop();
+  this.style.display = 'none'; // Hide the Start button after click
   playPlaceTilesSound();
 });
 
@@ -38,7 +45,7 @@ async function initializeDragDrop() {
   makeDraggableAndDroppable();
 }
 
-initializeDragDrop();
+// Removed automatic call to initializeDragDrop to comply with the new start button functionality
 
 function createNumberSquare(i) {
   let numberSquare = document.createElement('div');
